@@ -31,7 +31,7 @@ gulp.task('styles', function() {
 // Scripts
 gulp.task('scripts', function() {
   return gulp.src(['app/js/vendor/*.js', 'app/js/main.js'])
-    .pipe(rename('main.min.js'))
+    .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(livereload(server))
     .pipe(gulp.dest('dist/inc'))
@@ -40,7 +40,7 @@ gulp.task('scripts', function() {
 
 // Images
 gulp.task('images', function() {
-  return gulp.src('app/images/**/*')
+  return gulp.src('app/img/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
     .pipe(livereload(server))
     .pipe(gulp.dest('dist/images'))
