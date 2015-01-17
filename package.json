@@ -19,18 +19,19 @@
   "author": "Nick Fetner",
   "license": "GPL V3",
   "devDependencies": {
-    "gulp": "~3.5.2",
+    "gulp": "~3.8.10",
     "gulp-rename": "~1.1.0",
     "tiny-lr": "0.0.5",
     "gulp-ruby-sass": "~0.3.1",
     "gulp-livereload": "~1.2.0",
-    "gulp-notify": "~1.0.0-beta",
+    "gulp-notify": "~2.1.0",
     "gulp-clean": "~0.2.4",
     "gulp-autoprefixer": "0.0.6",
     "gulp-concat": "~2.1.7",
     "gulp-minify-css": "~0.3.0",
     "gulp-cache": "~0.1.2",
     "gulp-uglify": "~0.2.1",
-    "gulp-imagemin": "~0.1.5"
+    "gulp-imagemin": "~0.1.5",
+    "gulp-plumber": "~0.6.6"
   }
 }
